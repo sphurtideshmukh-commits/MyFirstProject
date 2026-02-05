@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Program') {
             steps {
-                sh '''
+                bat '''
                     java -cp src Main
                 '''
             }
