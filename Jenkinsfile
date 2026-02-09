@@ -8,14 +8,14 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/sphurtideshmukh-commits/MyFirstProject.git'
             }
         }
 
         stage('Compile Java') {
             steps {
-                sh '''
+                bat '''
                     javac src/Main.java
                 '''
             }
